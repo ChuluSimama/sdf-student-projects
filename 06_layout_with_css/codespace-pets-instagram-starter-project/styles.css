@@ -1,6 +1,6 @@
 /* Base Styles */
 
-[16:54, 02/02/2024] Qonda Mampofu: :root {
+:root {
     font-size: 10px;
   }
   
@@ -290,20 +290,4 @@
         padding: 0; /* Remove padding to eliminate white space */
     }
   }
-  [16:57, 02/02/2024] Qonda Mampofu: <!DOCTYPE html>
-  <html>
-  <head>
-      <link rel="stylesheet" type="text/css" href="index.css">
-      <title>Transforms - Real-World Challenge</title>
-  </head>
-  <body>
-  
-  <div class="logo">
-      <div class="box box-red"></div>
-      <div class="box box-blue"></div>
-      <div class="box box-green"></div>
-      <div class="box box-orange"></div>
-  </div>
-  
-  </body>
-  </html>
+
