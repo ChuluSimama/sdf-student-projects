@@ -3,7 +3,6 @@
 :root {
     font-size: 10px;
   }
-  
   *,
   *::before,
   *::after {
@@ -130,6 +129,7 @@
   }
   
   .gallery {
+    clear: both;
     display: flex;
     flex-wrap: wrap;
     margin: -1rem -1rem;
@@ -196,10 +196,21 @@
     border-bottom-color: transparent;
     border-radius: 50%;
     margin: 0 auto;
-    animation: loader 500ms linear infinite;
+    animation: rotateLoader 2s linear infinite;
+    transform-origin: center;
+  }
+
+  @keyframes rotateLoader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+    
   }
   
-  
+ 
   
   @media screen and (max-width: 40rem) {
     .profile {
@@ -209,9 +220,7 @@
     }
   
     .profile::after {
-        content: "";
-        display: table;
-        clear: both;
+       display: none;
     }
   
     .profile-image,
@@ -281,6 +290,7 @@
     .profile-stat-count {
         display: block;
     }
+
   }
   
   /* Additional Media Query */
@@ -288,6 +298,13 @@
   @media screen and (max-width: 40rem) {
     main {
         padding: 0; /* Remove padding to eliminate white space */
+    }
+
+    @media  screen and (min-width: 1200px) { .gallery-item 
+        { 
+            flex: 1 0 30%; /*Adjust the width to occupy one-third of the container */
+        }
+        
     }
   }
 
